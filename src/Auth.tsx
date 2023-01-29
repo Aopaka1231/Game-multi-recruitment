@@ -24,10 +24,6 @@ const Auth: React.FC = () => {
         console.log(userCredential);
         return redirect("/home/hiro/hack/game-recruit/src/pages/home.tsx");
       })
-      .catch((error) => {
-        alert(error.message);
-        console.error(error);
-      });
   };
 
   const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -74,6 +70,7 @@ const Auth: React.FC = () => {
                 fullWidth
                 style={{ marginTop: "0.5em", marginBottom: "0.5em" }}
                 onClick={Register}
+                href="./home"
               >
                 新規登録
               </Button>
