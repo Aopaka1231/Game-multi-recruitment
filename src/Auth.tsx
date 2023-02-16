@@ -1,6 +1,6 @@
 "use client";
 import React, { Fragment, useState } from "react";
-import { auth } from "./firebase";
+import { auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { redirect } from "react-router-dom";
 import {
